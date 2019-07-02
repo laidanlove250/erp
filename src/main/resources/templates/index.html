@@ -1,0 +1,396 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="ERP首家关注企业资源类型平台" />
+    <meta name="description" content="ERP(Enterprise Resource Planning)是业内首家关注企业资源类型的区块链平台。
+    ERP一个数据可靠、信息透明、资源共享和网络互联的企业生态系统" />
+    <title>ERP — 企业资源链</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--百度推广商桥代码-->
+    <script>
+        /* var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?72184406979005748c45e4166c0d2a89";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })(); */
+        <!-- 判断是pc还是移动端 -->
+        var mobileAgent = ['iphone', 'ipod', 'ipad', 'android', 'mobile', 'blackberry', 'webos', 'incognito', 'webmate', 'bada', 'nokia', 'lg', 'ucweb', 'skyfire'];
+        var browser = navigator.userAgent.toLowerCase();
+        var isMobile = false;
+        for (var i=0; i < mobileAgent.length; i++){
+            if (browser.indexOf(mobileAgent[i])!==-1){
+                isMobile = true;
+                break;
+            }
+        }
+        if(isMobile){
+            location.href = 'http://www.erptoken.cn/m';
+        } 
+    </script>
+</head>
+<body>
+<header>
+    <h1 class="logo">
+        <a href="">ERP — 首家关注企业资源类型平台</a>
+    </h1>
+    <div class="start">
+        <canvas id="canvas" width="100%">你的浏览器不支持canvas</canvas>
+    </div>
+    <div class="grid"></div>
+    <div class="ball">
+        <h5>
+            <div>ERP</div>
+            <p><br>ERP首家关注企业资源类型平台</p>
+        </h5>
+    </div>
+    <nav id="nav">
+        <div class="inner">
+            <ul>
+                <li><a href="javascript:void(0)">ERP</a></li>
+                <li><a href="javascript:void(0)">发展规划</a></li>
+                <li><a href="javascript:void(0)">集团介绍</a></li>
+                <li><a href="javascript:void(0)">合作伙伴</a></li>
+                <li><a href="javascript:void(0)">投资机构</a></li>
+                <!-- <li><a href="javascript:void(0)">合作</a></li> -->
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--关于我们-->
+<section class="fit-people wrap">
+      <div class="title">
+         <h2>关于我们</h2>
+          <p>
+              About Us
+          </p>
+      </div>
+      <div class="discribtion">
+               &nbsp;&nbsp;&nbsp;&nbsp;ERP(Enterprise Resource Planning)首家关注企业资源类型平台。<br/>&nbsp;&nbsp;&nbsp;&nbsp;ERP认为传统的企业资源系统存在低效率、不透明。并且随着时间的推移,企业成本和资源可塑性变得越来越难以管理。<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;ERP将以区块链底层技术为依托与芯片技术、人工智能、大数据技术等融合一起探索解决这些问题。
+      </div>
+      <div class="link-dots">
+          <ul>
+              <li>
+                  <div class="circle">
+                      <div class="flip-container">
+                          <div class="flipper">
+                              <div class="front"><img src="images/fit-people/people1.png" alt=""></div>
+                              <div class="back"><img src="images/fit-people/people1.png" alt=""></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <p class="blue-color">分布式(微服务)账本</p>
+                      <p>每个节点就是每个账本<br>账本只有几kb</p>
+                  </div>
+              </li>
+              <li>
+                  <div class="circle">
+                      <div class="flip-container">
+                          <div class="flipper">
+                              <div class="front"><img src="images/fit-people/jiegou.png" alt=""></div>
+                              <div class="back"><img src="images/fit-people/jiegou.png" alt=""></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <p class="blue-color">非对称加密授权技术</p>
+                      <p>token信息公开<br>账户信息授权才能访问</p>
+                  </div>
+              </li>
+              <li>
+                  <div class="circle">
+                      <div class="flip-container">
+                          <div class="flipper">
+                              <div class="front"><img src="images/fit-people/trade.png" alt=""></div>
+                              <div class="back"><img src="images/fit-people/trade.png" alt=""></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <p class="blue-color">共识机制</p>
+                      <p>所有节点信息一致<br>节点转账速度快</p>
+                  </div>
+              </li>
+              <li>
+                  <div class="circle">
+                      <div class="flip-container">
+                          <div class="flipper">
+                              <div class="front"><img src="images/fit-people/people2.png" alt=""></div>
+                              <div class="back"><img src="images/fit-people/people2.png" alt=""></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <p class="blue-color">智能合约</p>
+                      <p>信息不可篡改<br>安全有保障</p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+</section>
+<!--币族云国际版-->
+<section class="international wrap">
+    <div class="title">
+        <h2>ERP</h2>
+        <p>
+            Enterprise Resource Planning
+        </p>
+    </div>
+    <ul>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">01</span>
+                <span class="title-content">2019年2月</span>
+            </div>
+            <div class="lis-discrib">
+                2019年2月ERP项目正式启动
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">02</span>
+                <span class="title-content">2019年5月</span>
+            </div>
+            <div class="lis-discrib">
+                2019年5月初,50人的研发团队正式搭建完成
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">03</span>
+                <span class="title-content">2019年6月&emsp;</span>
+            </div>
+            <div class="lis-discrib">
+                2019年6月技术团队正式确定以区块链底层技术为依托与芯片技术、人工智能、大数据技术等融合
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">04</span>
+                <span class="title-content">2019年10月</span>
+            </div>
+            <div class="lis-discrib">
+               2019年10月功能开发完成
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">05</span>
+                <span class="title-content">2019年12月</span>
+            </div>
+            <div class="lis-discrib">
+                2019年12月app开发完成
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">06</span>
+                <span class="title-content">2020年3月</span>
+            </div>
+            <div class="lis-discrib">
+                2020年3月ERP区块链 + 物联网主体功能完成
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">07</span>
+                <span class="title-content">2020年6月</span>
+            </div>
+            <div class="lis-discrib">
+               2020年6月测试完成
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">08</span>
+                <span class="title-content">2020年7月</span>
+            </div>
+            <div class="lis-discrib">
+                2020年7月正式推出首款ERP区块链平台
+            </div>
+        </li>
+        <li>
+            <div class="lis-title">
+                <span class="title-num">09</span>
+                <span class="title-content">2020年12月</span>
+            </div>
+            <div class="lis-discrib">
+                2020年12月依托AI和大数据功能的ERP区块链正式上线
+            </div>
+        </li>
+    </ul>
+</section>
+<!--我们帮您做到-->
+<section class="wecando wrap">
+    <div class="title">
+        <h2>集团介绍</h2>
+        <p>
+            Group Introduction
+        </p>
+    </div>
+    <ul>
+        <li>
+            <div class="block-box">
+                <img src="images/wecando/10.png" alt="">
+                <p>公司介绍</p>
+                <div class="hide-box">ERP是由韩国ELEMENT公司所发起的。ELEMENT成立于2018年8月份,是由韩国人资深媒体人发起的以区块链媒体为核心业务的教育咨询公司。公司专业聚焦中-韩区块链产业，有效为韩国B端及C端用户提供专业的行业资讯、报告、投融资信息及行业建议，同时也为韩国政府机构及地方团体提供调研报告及行业解决方案。</div>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div class="block-box">
+                <img src="images/wecando/20.png" alt="">
+                <p>政府合作</p>
+                <div class="hide-box">韩国产业通商资源部是韩国产业部创新研究、技术战略起草制定的最高部门。主业务负责：创新&研发战略、技术蓝图、预算投入方向、未来核心技术的开发等。</div>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div class="block-box">
+                <img src="images/wecando/30.png" alt="">
+                <p>区块链创业协会</p>
+                <div class="hide-box">韩国区块链创业协会（KBSA:KOREA BLOCKCHAIN STARTUP ASSOCIATION），协会成立于2018年4月，现隶属韩国政府机构-中小风险企业部旗下，是韩国唯一从民间区块链机构起步，发展进入到政府机构旗下的协会。</div>
+                <span></span>
+            </div>
+        </li>
+        <li>
+            <div class="block-box">
+                <img src="images/wecando/40.png" alt="">
+                <p>公共外交协会</p>
+                <div class="hide-box">韩国公共外交协会现业务拓宽至科学、IT、区块链等新技术领域，连接韩国大企业与中间企业、地方自治团体、政府机构的合作。以及通过协会外交力量推动韩国企业、地方团体与海外的疏通与合作。</div>
+                <span></span>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- 合作伙伴 -->
+<section class="mainfun wrap">
+    <div class="partner">
+        <div class="title">
+            <h2>合作伙伴</h2>
+            <P>Partners </P>
+        </div>
+        <ul>
+            <li>
+                <img src="images/LOGO/timg.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/sk.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/ibm.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/google.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/te.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/face.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/oracle.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/ximen.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/jscj.png" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/ali.jpg" alt="">
+                <span></span>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- 投资机构 -->
+<section class="service-box wrap">
+    <div class="partner">
+        <div class="title">
+            <h2>投资机构</h2>
+            <P>Investment Agency </P>
+        </div>
+        <ul>
+            <li>
+                <img src="images/LOGO/gaoling.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/huaqi.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/cg.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/IDG.jpg" alt="">
+                <span></span>
+            </li>
+            <li>
+                <img src="images/LOGO/daixu.jpg" alt="">
+                <span></span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- 合作 -->
+<!-- <section class="partner-box wrap">
+    <div class="partner">
+        <div class="title">
+            <h2>商务合作</h2>
+            <P>Business cooperation </P>
+            <br/><br/>
+        	<h1>QQ：2593758197</h1>
+        </div>
+    </div>
+</section> -->
+<footer>
+    <div class="inner">
+        <p>
+           Copyright © 2019 ERP All Rights Reserved
+        </p>
+    </div>
+</footer>
+<div class="float-box">
+    <a href="" id="goback">
+        <img src="images/back.png" alt="">
+    </a>
+   <!--  <a href="javascript:void(0)" id="erweima">
+        <img src="images/connect.png" alt="">
+    </a> -->
+    <!-- <div class="erweima">
+        <img src="images/qq.png" alt="">
+    </div> -->
+</div>
+</body>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/start.js"></script>
+<script src="js/index.js"></script>
+<script src="js/slideshow.js"></script>
+</html>

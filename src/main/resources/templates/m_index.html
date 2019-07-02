@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="en">
+<head id="html">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="ERP首家关注企业资源类型平台" />
+    <meta name="description" content="ERP(Enterprise Resource Planning)是业内首家关注企业资源类型的区块链平台。
+    ERP一个数据可靠、信息透明、资源共享和网络互联的企业生态系统" />
+    <!-- 删除默认的苹果工具栏和菜单栏  -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no,email=no,address=no" name="format-detection">
+    <!-- 禁止把数字转化为拨号链接 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 设置icon图片 -->
+    <link rel="icon" href="m/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="m/css/reset.css">
+    <!--<link rel="stylesheet" href="css/base.css">-->
+    <link rel="stylesheet" href="m/css/common.css">
+    <link rel="stylesheet" href="m/css/animate.min.css">
+    <link rel="stylesheet" href="m/css/index.css">
+    <title>ERP — 首家关注企业资源类型平台</title>
+    <!--百度推广商桥代码-->
+    <script>
+        <!-- 判断是pc还是移动端 -->
+        var mobileAgent = ['iphone', 'ipod', 'ipad', 'android', 'mobile', 'blackberry', 'webos', 'incognito', 'webmate', 'bada', 'nokia', 'lg', 'ucweb', 'skyfire'];
+        var browser = navigator.userAgent.toLowerCase();
+        var isMobile = false;
+        for (var i=0; i<mobileAgent.length; i++){
+            if (browser.indexOf(mobileAgent[i])!==-1){
+                isMobile = true;
+                break;
+            }
+        }
+        if(!isMobile){
+            location.href = 'http://www.erptoken.cn';
+        }
+        // 禁用手指双击缩放
+        var lastTouchEnd = 0;
+        document.documentElement.addEventListener('touchend', function (event) {
+            var now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
+</head>
+<body>
+   <header>
+       <h1 class="logo">ERP</h1>
+       <nav>
+           <ul>
+               <li class="cur">ERP</li>
+               <li>发展规划</li>
+               <li>集团介绍</li>
+               <li>合作伙伴</li>
+               <!-- <li>加入我们</li> -->
+           </ul>
+       </nav>
+   </header>
+   <div class="headerbg">
+       <div class="start-box">
+           <canvas id="canvas" width="100%">你的浏览器不支持canvas</canvas>
+       </div>
+       <div class="tuoBg"></div>
+       <div class="ball-box" id="ball-box"></div>
+       <div class="bottomBg">
+           <h5>
+               <div>ERP</div>
+               <p>ERP首家关注企业资源类型平台</p>
+           </h5>
+           <div class="huan-box"><img src="m/images/huan.png" alt=""></div>
+           <!-- <button id="joinUs">加入我们</button> -->
+       </div>
+   </div>
+   <!--关于我们-->
+   <div id="aboutUs" class="wrap">
+       <!--币族云简介-->
+        <div class="introduction">
+            <h3>
+               ERP(Enterprise Resource Planning)<br>
+                首家关注企业资源类型平台
+            </h3>
+            <p>ERP认为传统的企业资源系统存在低效率、不透明。并且随着时间的推移,企业成本和资源可塑性变得越来越难以管理。<br>
+               ERP将以区块链底层技术为依托与芯片技术、人工智能、大数据技术等融合一起探索解决这些问题。
+            </p>
+        </div>
+       <!--哪些特色-->
+        <div class="fitObj">
+            <div class="h4Title">
+                <h4>ERP特色</h4>
+            </div>
+            <ul>
+                <li>
+                    <h5>分布式(微服务)账本</h5>
+                    <p>每个节点就是每个账本<br>账本只有几kb</p>
+                </li>
+                <li>
+                    <h5>非对称加密授权技术</h5>
+                    <p>token信息公开<br>账户信息授权才能访问</p>
+                </li>
+                <li>
+                    <h5>共识机制</h5>
+                    <p>所有节点信息一致<br>节点转账速度快</p>
+                </li>
+                <li>
+                    <h5>智能合约</h5>
+                    <p>信息不可篡改<br>安全有保障</p>
+                </li>
+            </ul>
+        </div>
+        <!--轮播图-->
+        <div class="carousel">
+            <div class="container">
+                <div class="ban">
+                    <div class="ban_img1 rotate">
+                        <a class="a1">
+                            <div class="img"><img src="m/images/1.png" alt=""></div>
+                            <div class="ban_text">
+                                <h4>分布式(微服务)账本</h4>
+                                <p>每个节点就是每个账本<br>账本只有几kb</p>
+                            </div>
+                        </a>
+                        <a class="a2 rotating mark">
+                            <div class="img"><img src="m/images/2.png" alt=""></div>
+                            <div class="ban_text">
+                                <h4>非对称加密授权技术</h4>
+                                <p>token信息公开<br>账户信息授权才能访问</p>
+                            </div>
+                        </a>
+                        <a class="a3">
+                            <div class="img"><img src="m/images/3.png" alt=""></div>
+                            <div class="ban_text">
+                                <h4>
+                                   共识机制
+                                </h4>
+                                <p>所有节点信息一致<br>节点转账速度快
+                            </div>
+                        </a>
+                        <a class="a4">
+                            <div class="img"><img src="m/images/4.png" alt=""></div>
+                            <div class="ban_text">
+                                <h4>
+                                    智能合约
+                                </h4>
+                                <p>信息不可篡改<br>安全有保障</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <ul>
+                    <li></li>
+                    <li class="cur"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+   </div>
+   <!--发展规划-->
+   <div class="fitObj deepBg wrap">
+       <div class="h4Title">
+           <h4>发展规划</h4>
+       </div>
+       <div class="t-header">ERP发展规划</div>
+       <table border="1" bgcolor="#fff" bordercolor="#ccc" align="center" class="table-box">
+           <tbody>
+               <tr>
+                   <td width="15%">2019.02</td>
+                   <td class="td">2019年2月ERP项目正式启动</td>
+               </tr>
+               <tr>
+                   <td>2019.05</td>
+                   <td>2019年5月初,50人的研发团队正式搭建完成
+                   </td>
+               </tr>
+               <tr>
+                   <td>2019.06</td>
+                   <td>2019年6月技术团队正式确定以区块链底层技术为依托与芯片技术、人工智能、大数据技术等融合</td>
+               </tr>
+               <tr>
+                   <td>2019.10</td>
+                   <td>2019年10月功能开发完成</td>
+               </tr>
+               <tr>
+                   <td>2019.12</td>
+                   <td>2019年12月app开发完成</td>
+               </tr>
+               <tr>
+                   <td>2020.03</td>
+                   <td>2020年3月ERP区块链 + 物联网主体功能完成</td>
+               </tr>
+               <tr>
+                   <td>2020.06</td>
+                   <td>2020年6月测试完成</td>
+               </tr>
+               <tr>
+                   <td>2020.07</td>
+                   <td>2020年7月正式推出首款ERP区块链平台</td>
+               </tr>
+               <tr>
+                   <td>2020.12</td>
+                   <td>2020年12月依托AI和大数据功能的ERP区块链正式上线</td>
+               </tr>
+           </tbody>
+           <tfoot>
+               <tr>
+                   <td colspan="2">注：规划中的时间并不是某一个具体日期</td>
+               </tr>
+           </tfoot>
+       </table>
+   </div>
+   <!--我们的特点-->
+    <div class="ourTrait wrap">
+        <div class="h4Title">
+            <h4>集团介绍</h4>
+        </div>
+        <ul class="traitList" id="traitList">
+            <li>
+                <span><img src="m/images/ourFeature/yizhan.png" alt=""></span>
+                <div>
+                    <h5>公司介绍</h5>
+                    <p>ERP是由韩国ELEMENT公司所发起的。ELEMENT成立于2018年8月份,是由韩国人资深媒体人发起的以区块链媒体为核心业务的教育咨询公司。公司专业聚焦中-韩区块链产业，有效为韩国B端及C端用户提供专业的行业资讯、报告、投融资信息及行业建议，同时也为韩国政府机构及地方团体提供调研报告及行业解决方案。</p>
+                </div>
+            </li>
+            <li>
+                <span><img src="m/images/ourFeature/zidingyi.png" alt=""></span>
+                <div>
+                    <h5>政府合作</h5>
+                    <p>韩国产业通商资源部是韩国产业部创新研究、技术战略起草制定的最高部门。主业务负责：创新&研发战略、技术蓝图、预算投入方向、未来核心技术的开发等。</p>
+                </div>
+            </li>
+            <li>
+                <span><img src="m/images/ourFeature/tuozhan.png" alt=""></span>
+                <div>
+                    <h5>区块链创业协会</h5>
+                    <p>韩国区块链创业协会（KBSA:KOREA BLOCKCHAIN STARTUP ASSOCIATION），协会成立于2018年4月，现隶属韩国政府机构-中小风险企业部旗下，是韩国唯一从民间区块链机构起步，发展进入到政府机构旗下的协会。</p>
+                </div>
+            </li>
+            <li>
+                <span><img src="m/images/ourFeature/zizhu.png" alt=""></span>
+                <div>
+                    <h5>公共外交协会</h5>
+                    <p>韩国公共外交协会现业务拓宽至科学、IT、区块链等新技术领域，连接韩国大企业与中间企业、地方自治团体、政府机构的合作。以及通过协会外交力量推动韩国企业、地方团体与海外的疏通与合作。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--BZU主要功能模块-->
+   <div class="ourTrait wrap">
+       <div>
+           <div class="h4Title">
+               <h4>合作伙伴</h4>
+           </div>
+           <ul class="oprate-partner">
+               <li><img src="m/images/LOGO/timg.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/sk.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/ibm.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/google.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/te.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/face.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/oracle.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/ximen.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/jscj.png" alt=""></li>
+               <li><img src="m/images/LOGO/ali.jpg" alt=""></li>
+           </ul>
+       </div>
+       <div>
+           <div class="h4Title">
+               <h4>投资机构</h4>
+           </div>
+           <ul class="oprate-partner">
+               <li><img src="m/images/LOGO/gaoling.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/huaqi.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/cg.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/IDG.jpg" alt=""></li>
+               <li><img src="m/images/LOGO/daixu.jpg" alt=""></li>
+           </ul>
+       </div>
+   </div>
+   <!-- 加入我们 -->
+   <!-- <div class="ourTrait wrap">
+       
+       <div class="h4Title">
+           <h4>加入我们</h4>
+       </div>
+       <div class="erweima">
+           <img src="m/images/qq.png" alt="">
+           <p>扫描了解更多</p>
+       </div>
+   </div> -->
+</body>
+<script src="m/js/jquery-1.7.2.min.js"></script>
+<script src="m/js/js.js"></script>
+<script src="m/js/start.js"></script>
+<script>
+    $(function(){
+        // 页面滚动时头部变为国定定位
+        var pageHeight = $(document).height()+$(window).height()
+        // 加入我们按钮点价动画
+        $('#joinUs').on('touchstart',function() {
+            $('html,body').animate({scrollTop:pageHeight*2},100)
+	    $('.apply-btn').css('pointer-events','none');
+            setTimeout(function(){
+              $('.apply-btn').css('pointer-events','auto');
+            },400)
+        });
+        var $title = $('.bottomBg').find('div');
+        $title.addClass('animated fadeInUp');
+        setTimeout(function () {
+            $title.siblings('p').addClass('animated fadeInUp');
+        },100);
+    });
+    // 点击BZU主要功能模块的li点击时动画
+    $(function(){
+        var startX, endX, startY, endY;
+        var $functionList = $('#functionList');
+        $functionList.on('touchstart',function(e){
+            var _touch = e.originalEvent.targetTouches[0];
+            startX = _touch.pageX;
+            startY = _touch.clientY;
+        });
+        $functionList.on("touchend", "li", function(event){
+             var _touch = event.originalEvent.changedTouches[0];
+             endX = _touch.pageX;
+             endY = _touch.clientY;
+             var moveX = Math.abs(endX - startX);
+             var moveY = Math.abs(endY - startY);
+             if (moveX < 10 && moveY < 10) {
+                 var target = $(event.currentTarget)[0];
+                // 查看兄弟元素是否展开
+                var siblingLis = $(target).siblings();
+                siblingLis.each(function(i,item){
+                    var me = $(this);
+                    // 如果第一个元素是展开状态
+                    if ($(me).children(".detail-box")[0].style.display === 'block') {
+                        // 展开让收回
+                        $(me[0].children[1]).slideUp(50);
+                        var presibling= $(me[0].children[1])[0].previousElementSibling;
+                        $(presibling).find('h6').toggleClass('blueColor');
+                        var imgL = $(presibling).find('img');
+                        var arrL = imgL.attr('src').split('.');
+                        var strLen = arrL[0].length;
+                        var strL = arrL[0].slice(0,strLen-1);
+                        imgL.attr('src', strL + '1.png' );
+                        $(presibling).find('span').toggleClass('toggle-btn-active');
+                    }
+                });
+                // 自身子元素变色
+                 var childOne = $(target).children(".list-line");
+                 // 将h6变色
+                 var h6 = childOne.find('h6');
+                 h6.toggleClass('blueColor');
+                 // 三角旋转180度
+                 var span = childOne.find('span');
+                 span.toggleClass('toggle-btn-active');
+                 // 图片换图
+                 var img = childOne.find('img');
+                 var arr = img.attr('src').split('.');
+                 var num = arr[0].slice(arr[0].length-1);
+                 var str = arr[0].slice(0,arr[0].length-1);
+                 console.log(num);
+                 if (num - 0 === 1) {
+                     img.attr('src', str + '2.png' )
+                 } else {
+                     img.attr('src', str + '1.png' )
+                 }
+                var childTwo = $(target).children(".detail-box");
+                childTwo.slideToggle(50);
+             }
+         })
+    });
+    // 页面滚动特效
+    $(function () {
+        // 页面滚动时判断元素是否滚动到可视区范围
+        // 获取可视口的高度
+        var height = $('html')[0].offsetHeight;
+        var $traitListLis =  $('#traitList li');
+        var $traitListTop = $('#traitList').position().top;
+        // 获取关于我们的盒子的距离顶部的高度和自身的高度
+        var aboutUstop = $('#aboutUs').position().top;
+        var aboutUsheight = $('#aboutUs').outerHeight(true);
+        var intrTitle = $('.introduction').find('h3')[0];
+        var h4 = $('.h4Title>h4');
+        // 导航点击滚动效果
+        var wraps = $('.wrap');
+        var navLis = $('nav li');
+        var headerHeight = $('header')[0].scrollHeight;
+        var idx = 0;
+        var startY, endY, moveY;
+        navLis.on('touchstart', function(e){
+            idx = $(e.target).index();
+            $(e.target).siblings().removeClass('cur');
+            $(e.target).addClass('cur');
+            var offTop = $(wraps[idx]).position().top;
+            var scrollTop = $(document).scrollTop();
+            // 获取$('html,body').css的值
+            if (scrollTop === parseInt(offTop - headerHeight) + 1) {
+                $($(wraps[idx]).find('h4')[0]).addClass('animated fadeInUp');
+            } else {
+                if (idx === 0) {
+                    $($(wraps[idx]).find('h3')[0]).removeClass('animated fadeInUp');
+                    $($(wraps[idx]).find('p')[0]).removeClass('animated fadeInUp');
+                } else if (idx === 2) {
+                    $($(wraps[idx]).find('li')).each(function (i, item) {
+                        var me = $(this);
+                        me.removeClass('animated fadeInUp');
+                    });
+                }
+                $($(wraps[idx]).find('h4')[0]).hide(0).removeClass('animated fadeInUp');
+                $('html,body').animate({scrollTop: offTop - headerHeight + 1},10)
+            }
+        });
+        $(window).on('touchstart', function(e){
+            startY = e.originalEvent.targetTouches[0].clientY;
+        });
+        $(window).on('touchend', function(e){
+            endY = e.originalEvent.changedTouches[0].clientY;
+            moveY = endY - startY;
+        });
+        $('html,body').css({'scrollTop': moveY});
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop() || document.body.scrollTop;
+            // 页面中监听页面滚动的值，并将手指移动的距离赋给
+            // 添加导航悬浮效果
+            if (scrollTop > 1) {
+                $('header').css({'position':'fixed', 'top':0, 'left':0, 'zIndex':10});
+            };
+            $('.headerbg').css({'marginTop':headerHeight});
+            // 页面滚动时获取该元素顶部到屏幕顶部的距离 getBoundingClientRect只有元素显示的情况下才会有数据
+            var intrTitleHeight = $('.introduction').find('h3')[0].getBoundingClientRect().top;
+            if (intrTitleHeight - height < 0) {
+                $(intrTitle).fadeIn(200).addClass('animated fadeInUp').siblings('p').fadeIn(200).addClass('animated fadeInUp');
+            }
+            wraps.each(function(i,item){
+                var parentOfftop = $(item).position().top;
+                var boxHeight = $(item).outerHeight(true);
+                // 如果是第一个时
+                if (i===0) {
+                    if(aboutUstop - headerHeight <= scrollTop && scrollTop < aboutUstop + aboutUsheight - headerHeight) {
+                        navLis.eq(0).addClass('cur').siblings().removeClass('cur');
+                    }
+                } else {
+                    if(parentOfftop - headerHeight <= scrollTop && scrollTop <= parentOfftop + boxHeight - headerHeight) {
+                        navLis.eq(i).addClass('cur').siblings().removeClass('cur');
+                    }
+                }
+            });
+            h4.each(function(i,item){
+                var me = $(this);
+                // 父元素距离顶部的高度
+                var parentOfftop = $(item).parent().position().top;
+                // 当元素进入视口执行动画
+                if (parentOfftop < height + scrollTop) {
+                    if (i === 2) {
+                        var lis = me.parent().siblings('ul').find('li');
+                        lis.each(function (index, te) {
+                            var that = $(this);
+                            that.delay(index*300).fadeIn(100).addClass('animated fadeInUp');
+                        })
+                    }
+                    me.fadeIn(100).addClass('animated fadeInUp');
+                }
+            });
+        })
+    });
+</script>
+</html>

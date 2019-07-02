@@ -1,0 +1,11 @@
+*.classpath
+*.project
+/.settings/
+/bin/
+/target/
+/.externalToolBuilders/
+*.iml
+/project.build.directory_IS_UNDEFINED/
+/logs/
+*.log
+*.class
