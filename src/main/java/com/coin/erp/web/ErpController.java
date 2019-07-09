@@ -36,10 +36,10 @@ public class ErpController {
 	 * @param request
 	 * @param response
 	 */
-	@RequestMapping(value = "/ens", method = RequestMethod.GET)
+	@RequestMapping(value = "/erp", method = RequestMethod.GET)
 	public void pdfStreamHandler(HttpServletRequest request, HttpServletResponse response) {
         //PDF文件地址
-		File file = new File("/usr/local/apps/ens/ENS.pdf");
+		File file = new File("/usr/local/apps/erp/ERP.pdf");
 		if (file.exists()) {
 			byte[] data = null;
 			FileInputStream input=null;
